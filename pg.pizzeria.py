@@ -2,7 +2,7 @@ from tkinter import *
 
 root=Tk()
 root.geometry('440x330')
-root.title('Піцерія')
+root.title('Боднар Юрій')
 
 #Labels
 Name=Label(root, text='Найменування', font=('Arial',12,'bold'))
@@ -21,7 +21,8 @@ Bun=Label(root, text='Тістечко', font=('Arial',12))
 Bun.place(x=25, y=170)
 Juice=Label(root, text='Сік', font=('Arial',12))
 Juice.place(x=25, y=220)
-
+Author=Label(root, text='Проєкт виконано учнем 10 класу Боднарем Юрієм')
+Author.place(x=150, y=310)
 
 def s1_click(val):
     global y1,y2,y3,y4
@@ -77,9 +78,9 @@ C4=Label(root, bg='lawn green', text=0, font=('Arial',12),textvariable=var4)
 C4.place(x=310, y=220, width=60, height=30)
 
 Lprice=Label(root, text='Вартість замовлення:', font=('Arial',12))
-Lprice.place(x=25, y=290)
+Lprice.place(x=25, y=265)
 UAH=Label(root, text='грн.', font=('Arial',12))
-UAH.place(x=270, y=290)
+UAH.place(x=270, y=265)
 
 #Button
 def btn_click():
@@ -88,9 +89,9 @@ def btn_click():
     var5.set(y)
 var5=StringVar()
 Count=Button(text='Розрахувати', font=('Arial',12),command=btn_click)
-Count.place(x=310, y=290)
+Count.place(x=310, y=265)
 C5=Label(root, bg='lime green', text=0, font=('Arial',12),textvariable=var5)
-C5.place(x=200, y=290, width=60, height=30)
+C5.place(x=200, y=265, width=60, height=30)
 
 #Entries
 P1=Entry(bg='green yellow', justify='center', font='12')
